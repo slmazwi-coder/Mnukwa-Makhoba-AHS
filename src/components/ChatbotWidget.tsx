@@ -149,9 +149,9 @@ You help parents, learners, guardians and community members with anything about 
 
 School details:
 - Name: Mnukwa-Makhoba Agricultural High School
-- Location: Sigoga Location, Mgubo A/A, Matatiele, 4730 (Eastern Cape)
-- Phone: +27 76 707 3212
-- Email: office@mounthargreavesss.co.za
+- Location: Makhoba A/A, Matatiele, Eastern Cape, 4730
+- Phone: 076 403 9098
+- Email: mnukwamakhobaahs@gmail.com
 - Motto: "We Can"
 - Principal: Ms B Ngozwana
 - Deputy Principal: Mr M Leanya
@@ -194,7 +194,7 @@ async function askClaude(userMessage: string): Promise<string> {
     return text;
   } catch (err) {
     console.error('[Chatbot] Claude request failed:', err);
-    return 'I\'m having trouble connecting right now. Please contact the school directly at +27 76 707 3212 or office@mounthargreavesss.co.za.';
+    return 'I\'m having trouble connecting right now. Please contact the school directly at 076 403 9098.';
   }
 }
 
@@ -308,7 +308,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         {
           id: uid(),
           role: 'bot',
-          text: 'Something went wrong. Please contact the school at +27 76 707 3212.',
+          text: 'Something went wrong. Please contact the school at 076 403 9098 or message us on Facebook: MNUKWA-Makhoba AHS.',
           createdAt: Date.now(),
         },
       ]);
