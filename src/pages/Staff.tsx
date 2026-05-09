@@ -1,5 +1,5 @@
 import React from 'react';
-import { User } from 'lucide-react';
+
 
 interface StaffMember {
   name: string;
@@ -31,9 +31,9 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
   <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center border border-[#f0dede] hover:-translate-y-1">
     <div className="w-24 h-24 rounded-full bg-red-50 border-4 border-[#f0c0c0] flex items-center justify-center mb-4 overflow-hidden">
       {member.image ? (
-        <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+        <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).src = '/assets/Mnukwa_logo.webp'; }} />
       ) : (
-        <User size={40} className="text-school-green opacity-25" />
+        <img src="/assets/Mnukwa_logo.webp" alt="Mnukwa-Makhoba AHS" className="w-full h-full object-cover" />
       )}
     </div>
     <h3 className="text-sm font-bold text-school-green leading-tight">{member.name}</h3>
