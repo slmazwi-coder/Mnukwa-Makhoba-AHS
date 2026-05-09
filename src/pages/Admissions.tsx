@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import {
   Upload,
   CheckCircle,
-  BedDouble,
   X,
   FileText,
   ChevronRight,
@@ -113,7 +112,7 @@ export const Admissions = () => {
     countryOfResidence: '', province: '', physicalAddress: '', citySuburb: '', postalCode: '',
     homeLanguage: '', preferredLanguageOfInstruction: '',
     homeTelephone: '', emergencyTelephone: '', learnerCell: '', learnerEmail: '',
-    isBoarder: '', modeOfTransport: '', deceasedParent: 'None', religion: '',
+    modeOfTransport: '', deceasedParent: 'None', religion: '',
   });
 
   const [prevSchool, setPrevSchool] = useState({
@@ -288,19 +287,6 @@ export const Admissions = () => {
     <div className="py-12 sm:py-16 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="section-title">General Application for Admission</h1>
-
-        {/* Boarding notice */}
-        <div className="mb-8 bg-white border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <div className="font-bold text-gray-900">Need boarding accommodation?</div>
-            <div className="text-sm text-gray-600">
-              General and boarding applications are separate. Submit both if a hostel bed is required.
-            </div>
-          </div>
-          <a href="/boarding" className="btn-primary inline-flex items-center justify-center gap-2 shrink-0">
-            <BedDouble size={18} /> Boarding Application
-          </a>
-        </div>
 
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
@@ -486,14 +472,6 @@ export const Admissions = () => {
 
                         <Field label="Learner Email Address">
                           <input className={inp} type="email" value={learner.learnerEmail} onChange={e => patchL('learnerEmail', e.target.value)} />
-                        </Field>
-
-                        <Field label="Boarder">
-                          <select className={sel} value={learner.isBoarder} onChange={e => patchL('isBoarder', e.target.value)}>
-                            <option value="">Select</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                          </select>
                         </Field>
 
                         <Field label="Mode of Transport">
