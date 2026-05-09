@@ -302,9 +302,9 @@ export const setApplications = (items: Application[]) => setItems('admin_applica
 
 // Contact
 const defaultContact: ContactInfo = {
-  address: 'Sigoga Location, Mgubo A/A, Matatiele, 4730 (Eastern Cape)',
-  phone: '+27 76 707 3212',
-  email: 'office@mounthargreavesss.co.za',
+  address: 'Makhoba A/A, Matatiele, Eastern Cape, 4730',
+  phone: '076 403 9098',
+  email: 'mnukwamakhobaahs@gmail.com',
   monThu: '07:30 - 15:30',
   friday: '07:30 - 13:30',
   weekend: 'Closed',
@@ -319,10 +319,10 @@ const defaultAbout: AboutInfo = {
     'The school is committed to disciplined learning, community values, and strong academic outcomes.',
     'Parents and guardians are encouraged to engage with the school through meetings, events, and ongoing learner support.',
   ],
-  principalName: 'Mr Msindo',
+  principalName: 'Ms Ngozwana',
   principalTitle: 'Principal',
   principalMessage: [
-    'Welcome to Mnukwa-Makhoba Agricultural High School. We believe every learner can achieve with consistent effort, good support, and a strong learning environment.',
+    'Welcome to Mnukwa-Makhoba Agricultural High School. We believe every learner can achieve with consistent effort, good support, and a strong agricultural learning environment.',
     'We value respect, responsibility, and pride in our school community. Together we can build a culture of achievement.',
   ],
 };
