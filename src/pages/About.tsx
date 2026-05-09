@@ -76,7 +76,7 @@ export const About = () => {
               <div className="flex flex-col items-center justify-center bg-school-green p-8 md:p-10">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
                   <div className="w-full h-full flex items-center justify-center bg-[#5a1414]">
-                    <img src="/assets/Mnukwa_logo.webp" alt="School badge" className="w-24 h-24 object-cover rounded-full" />
+                    <img src="/assets/about/principal.jpg" alt="Mr. Msindo MN" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).src = '/assets/Mnukwa_logo.webp'; }} />
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white text-center leading-tight">Mr. Msindo MN</h3>
