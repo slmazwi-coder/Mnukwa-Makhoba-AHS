@@ -185,7 +185,7 @@ export const ApplicationsEditor = () => {
         >
           <option value="">All Types</option>
           <option value="General">General</option>
-          <option value="Boarding">Boarding</option>
+          
         </select>
         <select
           value={statusFilter}
