@@ -285,7 +285,7 @@ const defaultNews: NewsItem[] = [
     title: '2027 Applications Open',
     date: 'Now open',
     content:
-      'Applications for admissions and boarding for the 2027 academic year are now open. Please submit your application using the online forms.',
+      'Applications for the 2026 academic year are now open. Please submit your application using the online form.',
     image: '',
   },
 ];
@@ -315,14 +315,14 @@ export const setContact = (info: ContactInfo) => setObject('admin_contact', info
 // About
 const defaultAbout: AboutInfo = {
   historyParagraphs: [
-    'Mount Hargreaves Senior Secondary School is a public boarding school serving learners in and around Sigoga Location (Matatiele, Eastern Cape).',
+    'Mnukwa-Makhoba Agricultural High School is a no-fee Quintile 1 public school in Makhoba A/A, Matatiele, Eastern Cape.',
     'The school is committed to disciplined learning, community values, and strong academic outcomes.',
     'Parents and guardians are encouraged to engage with the school through meetings, events, and ongoing learner support.',
   ],
-  principalName: 'Ms Ngozwana',
+  principalName: 'Mr Msindo',
   principalTitle: 'Principal',
   principalMessage: [
-    'Welcome to Mount Hargreaves Senior Secondary School. We believe every learner can achieve with consistent effort, good support, and a strong learning environment.',
+    'Welcome to Mnukwa-Makhoba Agricultural High School. We believe every learner can achieve with consistent effort, good support, and a strong learning environment.',
     'We value respect, responsibility, and pride in our school community. Together we can build a culture of achievement.',
   ],
 };
